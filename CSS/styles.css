@@ -1,0 +1,63 @@
+
+
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    /* font-family: 'Inter', sans-serif;    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Seymour One', sans-serif; */
+}
+
+.container{
+    max-width: 1200px !important;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.bttn-bg{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+
+    padding: 12px 34px;
+    font-weight: 600;
+    background: #F8D24E;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+.bttn-bg span{
+    transition: 0s;
+}
+.bttn-bg svg{
+    stroke: black;
+    transition: 0s;
+}
+.bttn-bg:hover{
+    background: #0A8817;
+}
+.bttn-bg:active span{
+    color: #fff;
+    transition: 0s;
+}
+.bttn-bg:active svg{
+    stroke: #fff;
+    transition: 0s;
+}
+.bttn-bg:disabled{
+    background: #ABABAB;
+}
+.bttn-bg:disabled span{
+    color: #000;
+    transition: 0s;
+}
+.bttn-bg:disabled svg{
+    stroke: #000;
+    transition: 0s;
+}

@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Icecream</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/header.css">
 </head>
 <body>
-    <h1 class="text-4xl text-red-400 font-bold underline text-center py-[30px]">
-        Hello world!
-      </h1>
+    <header>
+      <div class="container">
+        <nav class=" flex flex-row gap-[15px] items-center justify-between py-[8px]">
+          <div class="logo">
+            <a href="#"><img src="./images/header/Logo.svg" alt="logo"></a>         
+          </div>
+          <ul class="nav-list flex flex-row items-center gap-[27px]">
+            <li><a class="link" href=""></a></li>
+          </ul>
+          <div>
+            <button class="bttn-bg">
+              <span>Buy now</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 2L8.95 6L4 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
 
+    </header>
 
+      
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./main.js"></script>
+    <script src="./JS/render.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
