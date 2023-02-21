@@ -22,6 +22,6 @@
     ]
 
     document.querySelector('header nav .nav-list').innerHTML = data.map(item => `
-                                <li><a class="link" href=${item.link}>${item.text}</a></li>
+                                <li><a style="font-size: 16px; font-weight: 700" class="nav-link" href=${item.link}>${item.text}</a></li>
     `).join('');
 }
