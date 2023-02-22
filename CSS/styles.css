@@ -20,6 +20,8 @@ body{
     margin: 0 auto;
 }
 
+
+
 .bttn-bg{
     display: flex;
     align-items: center;
@@ -60,4 +62,108 @@ body{
 .bttn-bg:disabled svg{
     stroke: #000;
     transition: 0s;
+}
+
+
+
+.bttn {
+    color: black;
+    font-weight: 600;
+    padding: 12px 34px;
+    border: 2px solid #F8D24E;
+    background: transparent;
+    border-radius: 10px;
+
+    transition: 0.3s linear;
+}
+.bttn:hover{
+    border: 2px solid #0A8817;
+}
+.bttn:active{
+    border: 2px solid #0A8817;
+    color: #fff;
+    transition: 0s;
+}
+.bttn:disabled{
+    border: 2px solid #ABABAB;
+    color: #000;
+}
+
+
+
+.bttn-link {
+    color: #F8D24E;
+    text-decoration: underline;
+    font-weight: 600;
+
+    transition: 0.3s linear;
+}
+.bttn-link:hover{
+    color: #0A8817;
+
+}
+.bttn-link:active{
+    color: #FCFCFC;
+    transition: 0s;   
+}
+.bttn-link:disabled{
+    color: #ABABAB;   
+}
+
+
+
+.bttn-arrow{
+    display: flex;
+    width: 52px;
+    height: 24px;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+.bttn-arrow span{
+    position: relative;
+    display: block;
+    background: #131313;
+    width: 40px;
+    height: 2px;
+    transition: 0.3s linear;
+}
+.bttn-arrow span::after, .bttn-arrow span::before{
+    content: '';
+    position: absolute;
+    right: 2px;
+    width: 2px;
+    height: 10px;
+    background: #131313;
+}
+.bttn-arrow span::after{
+    top: -1px;    
+    transform: rotate(45deg);
+}
+.bttn-arrow span::before{
+    bottom: -1px;
+    transform: rotate(-45deg);
+}
+.bttn-arrow:hover span{
+    width: 50px;
+}
+.bttn-arrow:active span{
+    width: 50px;
+    height: 3px;
+}
+.bttn-arrow:active span::after, .bttn-arrow:active span::before{    
+    width: 3px;
+    height: 12px;
+}
+.bttn-arrow--black span{
+    background: #131313;
+}
+.bttn-arrow--black span::after, .bttn-arrow--black span::before{
+    background: #131313;
+}
+.bttn-arrow--white span{
+    background: #fff;
+}
+.bttn-arrow--white span::after, .bttn-arrow--white span::before{
+    background: #fff;
 }
