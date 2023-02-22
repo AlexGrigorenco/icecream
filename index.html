@@ -11,7 +11,7 @@
 <body>
     <header>
       <div class="container">
-        <nav class=" flex flex-row gap-[15px] items-center justify-between py-[8px]">
+        <nav class=" flex flex-row gap-[15px] items-center justify-between py-[8px] relative z-20">
           <div class="logo">
             <a href="#"><img src="./images/header/Logo.svg" alt="logo"></a>         
           </div>
@@ -31,7 +31,7 @@
       <div class="container">
         <div class="content-block relative flex flex-row justify-between pt-[45px] pb-[65px] text-[#FCFCFC]">
 
-          <div class="block-left flex flex-col gap-[28px]">
+          <div class="block-left flex flex-col gap-[28px] relative z-20">
             <h1 style="font-family: 'Seymour One'; font-weight: 400;" class="title text-[38px] uppercase max-w-[370px] leading-[48px] tracking-[0.04em]">
               <span>
                 ice cream
@@ -68,7 +68,7 @@
             </div>
   
           </div>
-          <div class="block-right flex flex-col gap-[16px]">
+          <div class="block-right flex flex-col gap-[16px] relative z-20">
             <div class="flex flex-col gap-[4px] items-end">
               <div class="num text-[46px] font-black text-[#131313]">
                 16
@@ -87,12 +87,12 @@
             </div>
           </div>
 
-          <div class="bg-img absolute">
+          <div class="bg-img absolute z-10">
             <div class="img-wrapper">
-              <img src="./images/header/icecream-img.png" alt="bg-img">
+              <img class="max-h-[100%]" src="./images/header/icecream-img.png" alt="bg-img">
             </div>
           </div>
-          <div class="bg-dots absolute">
+          <div class="bg-dots absolute z-0">
             <div class="img-wrapper">
               <img src="./images/header/dots.svg" alt="dots">
             </div>
