@@ -5,6 +5,10 @@ header{
     background: #84A178;
 }
 
+nav{
+    position: relative;
+    z-index: 2;
+}
 
 .nav-link{
     color: #FCFCFC;
