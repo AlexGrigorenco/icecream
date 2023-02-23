@@ -167,3 +167,13 @@ body{
 .bttn-arrow--white span::after, .bttn-arrow--white span::before{
     background: #fff;
 }
+
+
+.products .title{
+    font-family: 'Seymour One';
+    font-style: normal;
+}
+.products .title span{
+    font-family: 'Montserrat';
+    font-style: normal;   
+}
