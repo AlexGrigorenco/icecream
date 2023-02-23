@@ -8,6 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    color: #131313;
 
     /* font-family: 'Inter', sans-serif;    
     font-family: 'Roboto', sans-serif;
@@ -123,7 +124,6 @@ body{
 .bttn-arrow span{
     position: relative;
     display: block;
-    background: #131313;
     width: 40px;
     height: 2px;
     transition: 0.3s linear;
@@ -134,7 +134,6 @@ body{
     right: 2px;
     width: 2px;
     height: 10px;
-    background: #131313;
 }
 .bttn-arrow span::after{
     top: -1px;    

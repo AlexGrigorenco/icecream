@@ -4,3 +4,7 @@
 .products{
     background-image: url(../images/products/bg-img.svg);
 }
+
+.products .card .img-block .img-wrapper{
+    transform: translateY(-14px);
+}
