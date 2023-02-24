@@ -54,7 +54,7 @@
     ]
 
     document.querySelector('.products .cards-wrapper').innerHTML = data.map(item => `
-                            <div data-item=${item.data} class="card relative max-w-[370px] bg-[${item.bg}] px-[62px] pt-[166px] pb-[60px] flex flex-col gap-[64px] items-center rounded-[24px]">
+                            <div data-item=${item.data} class="card relative max-w-[370px] bg-[${item.bg}] px-[62px] pt-[166px] pb-[60px] flex flex-col gap-[64px] items-center rounded-[24px] justify-between">
 
                             <div style="box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);" class="img-block absolute top-[-32%] max-w-[300px] bg-[${item.bg}] rounded-[50%]">
                             <div class="img-wrapper rounded-[50%] overflow-hidden ">
