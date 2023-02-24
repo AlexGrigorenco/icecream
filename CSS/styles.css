@@ -168,11 +168,14 @@ body{
 }
 
 
-.products .title{
+.products .title,
+.how-made .title{
     font-family: 'Seymour One';
     font-style: normal;
 }
-.products .title span{
+.products .title span,
+.how-made .title span{
     font-family: 'Montserrat';
     font-style: normal;   
 }
+

@@ -3,6 +3,8 @@
 
 .products{
     background-image: url(../images/products/bg-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .products .card .img-block .img-wrapper{
