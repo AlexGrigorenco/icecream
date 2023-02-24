@@ -1,0 +1,28 @@
+
+
+
+.slider-body{
+    background-image: url(../images/slider/icecream-bg-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-body .slider-wrapper{
+    transform: translateY(-90px);
+}
+
+.swiper-pagination{
+    transform: translateY(50px);
+
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.swiper-pagination-bullet-active{
+    background-color: #84A178;
+}

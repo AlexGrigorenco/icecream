@@ -116,3 +116,51 @@
                         </div>
     `).join('')
 }
+
+
+//! render SLIDER
+
+{
+    const data = [
+        {
+            img: './images/slider/slider-img-1.png',
+            photo: './images/slider/emily-photo.png',
+            review: 'I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.',
+            namePlace: 'Emily, Los Angeles',
+        },
+        {
+            img: './images/slider/slider-img-2.png',
+            photo: './images/slider/sam-photo.png',
+            review: 'I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.',
+            namePlace: 'Sam, Los Angeles',
+        },
+        {
+            img: './images/slider/slider-img-3.png',
+            photo: './images/slider/diana-photo.png',
+            review: 'Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!',
+            namePlace: 'Diana, Chicago',
+        },
+    ]
+
+
+    document.querySelector('.slider-body .swiper-wrapper').innerHTML = data.map(item => `
+                            <div class="swiper-slide flex flex-col gap-[186px]">
+                                        <div class="img-wrapper w-[100%] max-h-[422px] rounded-[24px] overflow-hidden">
+                                            <img src=${item.img} alt="icecream">
+                                        </div>
+                                        <div class="content flex flex-col items-center gap-[32px]">
+                                            <div class="img-wrapper max-w-[84px] rounded-[50%] overflow-hidden">
+                                            <img src=${item.photo} alt="photo">
+                                            </div>
+                                            <div class="review bg-[#84A178] w-[100%] bg-[#84A178] rounded-[24px] px-[108px] pt-[40px] pb-[46px]">
+                                            <p class="text-[16px] text-center text-[#FCFCFC] leading-[186%] tracking-[0.04em]">
+                                                ${item.review}
+                                            </p>
+                                            </div>
+                                            <p class="text-[16px] leading-[186%]">
+                                            ${item.namePlace}
+                                            </p>
+                                        </div>
+                                        </div>
+    `).join('')
+}
