@@ -1,0 +1,26 @@
+
+
+
+footer .social-links a{
+    background-color: #F8D24E;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-links a svg{
+    fill: #84A178;
+    transition: 0.3s linear;
+}
+
+footer .social-links a:hover svg{
+    fill: #fff;
+}
+footer .social-links a:active{
+    width: 38px;
+    height: 38px;
+}

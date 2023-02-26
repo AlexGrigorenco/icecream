@@ -11,6 +11,10 @@
     transform: translateY(-90px);
 }
 
+.swiper-slide{
+    cursor: grab;
+}
+
 .swiper-pagination{
     transform: translateY(50px);
 
