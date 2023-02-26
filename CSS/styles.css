@@ -35,7 +35,8 @@ body{
     border-radius: 10px;
     transition: 0.3s linear;
 }
-.bttn-bg span{
+.bttn-bg span,
+.bttn span{
     transition: 0s;
 }
 .bttn-bg svg{
@@ -76,6 +77,11 @@ body{
     border-radius: 10px;
 
     transition: 0.3s linear;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
 }
 .bttn:hover{
     border: 2px solid #0A8817;
@@ -88,6 +94,22 @@ body{
 .bttn:disabled{
     border: 2px solid #ABABAB;
     color: #000;
+}
+.bttn svg{
+    stroke: black;
+    transition: 0s;
+}
+.bttn:active span{
+    color: #fff;
+    transition: 0s;
+}
+.bttn:active svg{
+    stroke: #fff;
+    transition: 0s;
+}
+.bttn:disabled svg{
+    stroke: #000;
+    transition: 0s;
 }
 
 

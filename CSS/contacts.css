@@ -1,0 +1,12 @@
+
+
+.contacts .addres{
+    cursor: default;
+}
+.contacts .addres:hover{
+    text-decoration: underline;
+}
+
+.contacts .cards-wrapper{
+    transform: translateY(-120px);
+}

@@ -164,3 +164,84 @@
                                         </div>
     `).join('')
 }
+
+
+//! render CONTACTS CARDS
+
+
+{
+    const data = [
+        {
+            title: 'CAFE',
+            city: 'Chicago',
+            addres: '10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA',
+            mondayFriday: '06:00 AM - 10:00 PM',
+            saturdaySunday: '08:00 AM - 16:00 PM',
+            phone: '+61(0) 383 766 284',
+            phoneNum: '+610383766284',
+            mail: 'noreply@envato.com',
+        },
+        {
+            title: 'FOOD TRUCK',
+            city: 'Los Angeles',
+            addres: '1003 Manhattan Ave, Manhattan Beach, CA 90263, USA',
+            mondayFriday: '06:00 AM - 10:00 PM',
+            saturdaySunday: '08:00 AM - 16:00 PM',
+            phone: '+61(0) 383 766 284',
+            phoneNum: '+610383766284',
+            mail: 'noreply@envato.com',
+        },
+        {
+            title: 'CAFE',
+            city: 'New York',
+            addres: '726 Sterling Pl, Brooklyn, NY 11222, USA',
+            mondayFriday: '06:00 AM - 10:00 PM',
+            saturdaySunday: '08:00 AM - 16:00 PM',
+            phone: '+61(0) 383 766 284',
+            phoneNum: '+610383766284',
+            mail: 'noreply@envato.com',
+        },
+    ]
+
+    document.querySelector('.contacts .cards-wrapper .cards').innerHTML = data.map(item => `
+    <div class="card p-[40px] bg-[#FFFFFF] max-w-[368px] rounded-[24px] flex flex-col gap-[32px]">
+                <div class="title">
+                  <p class="text-[16px] bg-[#F8D24E] inline-block px-[18px] py-[4px] rounded-[6px] leading-[186%] tracking-[0.04em]">
+                    ${item.title}
+                  </p>
+                </div>
+                <div class="location text-[16px] leading-[186%] tracking-[0.04em]">
+                  <span class="pb-[8px] block">
+                    ${item.city}
+                  </span>
+                  <p class="addres text-[#D6936D]">
+                    ${item.addres}
+                  </p>
+                </div>
+                <div class="line w-[100%] h-[1px] bg-[#E1E1E1]"></div>
+                <div class="schedule text-[16px] leading-[186%] tracking-[0.04em] flex flex-col gap-[12px]">
+                  <div>
+                    <p>
+                      Monday - Friday
+                    </p>
+                    <p class="text-[#ABABAB]">
+                      ${item.mondayFriday}
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      Saturday - Sunday
+                    </p>
+                    <p class="text-[#ABABAB]">
+                    ${item.saturdaySunday}
+                    </p>
+                  </div>
+                </div>
+                <div class="line w-[100%] h-[1px] bg-[#E1E1E1]"></div>
+                <div class="flex flex-col gap-[6px] text-[16px] leading-[186%] tracking-[0.04em]">
+                  <a href="tel:${item.phoneNum}">${item.phone}</a>
+                  <a href="mailto:${item.mail}">${item.mail}</a>
+                </div>
+              </div>
+    `).join('')
+}
