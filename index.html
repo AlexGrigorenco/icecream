@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/slider.css">
     <link rel="stylesheet" href="./CSS/contacts.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
 </head>
 <body>
     <header>
@@ -25,10 +26,10 @@
             
           </ul>
           <div>
-            <button class="bttn-bg">
-              <span>Buy now</span>
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 2L8.95 6L4 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <button class="bttn-bg" data-action="openModal" data-obj="buyNow">
+              <span data-obj="buyNow">Buy now</span>
+              <svg data-obj="buyNow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  data-obj="buyNow" d="M4 2L8.95 6L4 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
           </div>
@@ -254,6 +255,19 @@
         </div>
       </div>
     </footer>
+
+    <div class="modals">
+      <div class="modal hidden" data-action="closeModal">
+        <div class="modal-body max-w-[570px] bg-[#fff] relative">
+          <div class="modal-title text-[20px]">
+            Buy now
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
       
     <script src="https://cdn.tailwindcss.com"></script>
     
